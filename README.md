@@ -10,7 +10,6 @@ At the heart of this blockchain is the EVM. It accepts input data in the form of
 
 
 The EVM is a *(Quasi)Turing complete* 256 bit *STACK BASED* virtual machine that allows anyone to execute arbitrary EVM byte code.
-
 It is composed of several data components and a set of environment variables that are made available at execution time.
 
 The EVM is actually a turing complete VM. Quasi is used due to the checks put in place to prevent infinit running codes being executed in the VM this is achieved using what's known as *GAS*
