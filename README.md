@@ -57,7 +57,6 @@ The EVM's 157 Opcodes total represent various combination of low level machine i
 ### DISADVANTAGES
 Because EVM operations are maintained through a stack, its operation efficiency is relatively low, and may take a long time to complete a complex operation.
 Cost is typically uncertain to run operations on the EVM due to fluctuating Gas gas cost.
-### SMART CONTRACTS
 
 
 ### PRECOMPILED CONTRACTS
@@ -65,3 +64,7 @@ Precompiled contracts are a compromise used in the EVM to provide more complex l
 (usually used for complex operations such as encryption, hashing, etc.)
 
 It also costs less for developers than using functions that run directly in the EVM
+
+
+### EVM FLOW
+![EVM opcodes stack operation](/images/evm-architecture.png)
