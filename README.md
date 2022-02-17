@@ -19,7 +19,7 @@ The EVM is actually a turing complete VM. Quasi is used due to the checks put in
 
 ### Definitions
 Below are clarification of some of the highlighted terms as they relate to the EVM. 
-
+- Ethereum has two types of Accounts Externally owned accounts(controlled with private keys and without code) and Contract accounts with associated with a smart contract.
 - Current World State referes to the most recent state of the ethereum blockchain after the most recent transactions are carried out.
 - Stack Based - The EVM is built on a last-in first out data structure.
 - GAS is the resource used as a means of compensation to the nodes that host the evm. Gas can be paid for with Wei, the smallest unit of ether(ETH) it's native currency for exchange. One wei is 10^18 Ethers.
@@ -41,3 +41,27 @@ The EVM's 157 Opcodes total represent various combination of low level machine i
 
 ## Stack Operations on the EVM
 ![EVM opcodes stack operation](/images/stack_ops.png)
+
+
+### ADVANTAGES
+
+- Simplicity of stack based structure.
+- Small operations are Easier to assess.
+- Easier to work with compared to register based VMs.
+- 256-bit wordsize means larger range of hardware architectures even futuristic ones.
+- Being a World computer means it's data set requires a lot more work to be maliciously manipulated.
+- Issues like DDos is eliminated
+- It's Turin completeness reduces the limits in reality of the EVM as long as there's enough Gas.
+- 
+
+### DISADVANTAGES
+Because EVM operations are maintained through a stack, its operation efficiency is relatively low, and may take a long time to complete a complex operation.
+Cost is typically uncertain to run operations on the EVM due to fluctuating Gas gas cost.
+### SMART CONTRACTS
+
+
+### PRECOMPILED CONTRACTS
+Precompiled contracts are a compromise used in the EVM to provide more complex library functions that are not suitable for writing in opcode 
+(usually used for complex operations such as encryption, hashing, etc.)
+
+It also costs less for developers than using functions that run directly in the EVM
